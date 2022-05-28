@@ -1,4 +1,3 @@
-from turtle import goto
 import requests
 import json
 import time
@@ -31,7 +30,7 @@ uids = ['2106192855', '2656274875', '1241148864', '1195230310', '1192329374',
 	# 10w (50)
 	]
 	# '', '', '', '', '',
-# next now: 20
+# next now: 50
 # 1k/sheet 2k/uid
 
 def CheckDuplicatedUID():
@@ -44,9 +43,9 @@ def CheckDuplicatedUID():
 
 def main():
 	CheckDuplicatedUID()
-	Crawl(42, 1)
-	return
-	for now in range(47, len(uids) if False else 50):
+	# Crawl(42, 1)
+	# return
+	for now in range(50, len(uids) if False else 50):
 		for part in [1, 2]:
 			Crawl(now, part)
 
